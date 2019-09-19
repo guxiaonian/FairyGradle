@@ -1,0 +1,1 @@
+rule com.a.b.** com.my.test.@1
