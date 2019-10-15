@@ -19,3 +19,16 @@
 4. 在`rule.txt`文件内写入要替换的包名
 5. 执行`./gradlew excludeAar`
 6. 生成的新aar在`./build/excludeaar`文件夹下
+
+# jar文件相关
+
+剔除jar内某个包或个别文件，包名替换
+
+## 使用步骤
+
+1. 将要修改的jar文件复制到libs文件夹下
+2. 在`build.gradle`文件内填写该文件的全名
+3. 在`excludeJar.gradle`文件内填写要剔除的包名或类名
+4. 在`rule.txt`文件内写入要替换的包名
+5. 执行`./gradlew replaceJar`
+6. 生成的新`classes.jar`在`./build/unzipaar`文件夹下

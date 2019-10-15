@@ -1,8 +1,11 @@
 apply plugin: 'com.android.application'
 configurations.maybeCreate("default")
 //需填写需要修改的文件全名
-artifacts.add("default", file('/libs/a-b-c.aar'))
-apply from: "${project.projectDir.absoluteFile}\\excludeAar.gradle"
+artifacts.add("default", file('/libs/a_b_c.jar'))
+//aar
+//apply from: "${project.projectDir.absoluteFile}\\excludeAar.gradle"
+//jar
+apply from: "${project.projectDir.absoluteFile}\\excludeJar.gradle"
 android {
     compileSdkVersion 28
     defaultConfig {
